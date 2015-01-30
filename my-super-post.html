@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>Tags - schiob</title>
+    <title>First post - schiob</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,15 +10,22 @@
 
 
 
+<link rel="canonical" href="/my-super-post.html">
 
         <meta name="author" content="Santiago Chio" />
+        <meta name="keywords" content="pelican,publishing" />
+        <meta name="description" content="Test article" />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="schiob" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="schiob"/>
-        <meta property="og:url" content=""/>
-        <meta property="og:description" content="schiob"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="First post"/>
+        <meta property="og:url" content="/my-super-post.html"/>
+        <meta property="og:description" content="Test article"/>
+        <meta property="article:published_time" content="2015-01-30" />
+            <meta property="article:section" content="News" />
+            <meta property="article:tag" content="pelican" />
+            <meta property="article:tag" content="publishing" />
+            <meta property="article:author" content="Santiago Chio" />
 
 
     <!-- Bootstrap -->
@@ -49,7 +56,7 @@ schiob            </a>
                          <li><a href="/pages/about.html">
                              About
                           </a></li>
-                        <li >
+                        <li class="active">
                             <a href="/category/news.html">News</a>
                         </li>
             </ul>
@@ -66,35 +73,42 @@ schiob            </a>
     <div class="row">
         <div class="col-sm-9">
 
-    <section id="tags">
-        <h1>Tags for schiob</h1>
-        <div class="panel-group" id="accordion">            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-pelican">pelican <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-pelican" class="panel-collapse collapse">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/my-super-post.html"
+                       rel="bookmark"
+                       title="Permalink to First post">
+                        First post
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
                     <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2015-01-30T13:12:00+01:00">vie 30 enero 2015</time></span> <a href="/my-super-post.html">First post</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-publishing">publishing <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-publishing" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2015-01-30T13:12:00+01:00">vie 30 enero 2015</time></span> <a href="/my-super-post.html">First post</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2015-01-30T13:12:00+01:00"> vie 30 enero 2015</time>
+    </span>
 
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/pelican.html">pelican</a>
+        /
+	<a href="/tag/publishing.html">publishing</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h2>Hello!!</h2>
+<p>This is the first post, just to test this out!</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
     </section>
+
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
