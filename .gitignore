@@ -1,6 +1,6 @@
 *.sublime-project
 *.sublime-workspace
 *.pyc
-cache/
+cache/*
 __pycache__/
-output/
+output/*
