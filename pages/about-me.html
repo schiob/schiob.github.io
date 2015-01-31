@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>News - schiob</title>
+    <title>About me - schiob</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,20 +10,20 @@
 
 
 
+<link rel="canonical" href="/pages/about-me.html">
 
-    <meta name="author" content="Santiago Chio" />
-    <meta name="keywords" content="News" />
+        <meta name="author" content="Santiago Chio" />
+        <meta name="description" content="I&#39;m a programmer and musician" />
 
-    <!-- Open Graph tags -->
-        <meta property="og:site_name" content="schiob" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="schiob"/>
-        <meta property="og:url" content=""/>
-        <meta property="og:description" content="schiob"/>
+    <meta property="og:site_name" content="schiob" />
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="About me"/>
+    <meta property="og:url" content="/pages/about-me.html"/>
+    <meta property="og:description" content="I&#39;m a programmer and musician" />
 
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="/theme/css/bootstrap.flatly.min.css" type="text/css"/>
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
     <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="/theme/css/pygments/native.css" rel="stylesheet">
@@ -47,10 +47,10 @@ schiob            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                         <li><a href="/pages/about.html">
-                             About
+                         <li class="active"><a href="/pages/about-me.html">
+                             About me
                           </a></li>
-                        <li class="active">
+                        <li >
                             <a href="/category/news.html">News</a>
                         </li>
             </ul>
@@ -67,14 +67,13 @@ schiob            </a>
     <div class="row">
         <div class="col-sm-9">
 
-            <article>
-                <h2><a href="/my-super-post.html">First post</a></h2>
-                <div class="summary"><p>Test article</p>
-                    <a class="btn btn-default btn-xs" href="/my-super-post.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-
+    <section id="content" class="body">
+        <h1 class="entry-title">About me</h1>
+        
+        <div class="entry-content">
+            <p>I'm a programmer and musician</p>
+        </div>
+    </section>
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
@@ -121,6 +120,11 @@ schiob            </a>
         <li class="list-group-item">
             <a href="http://python.org/" target="_blank">
                 Python.org
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://jinja.pocoo.org/" target="_blank">
+                Jinja2
             </a>
         </li>
       </ul>
