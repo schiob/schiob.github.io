@@ -50,7 +50,7 @@ schiob            </a>
                              About
                           </a></li>
                         <li >
-                            <a href="/category/news.html">News</a>
+                            <a href="/category/blog.html">Blog</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -72,10 +72,10 @@ schiob            </a>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-news">News <span class="badge pull-right">1</span></a>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-blog">Blog <span class="badge pull-right">1</span></a>
                     </h4>
                 </div>
-                <div id="collapse-news" class="panel-collapse collapse">
+                <div id="collapse-blog" class="panel-collapse collapse">
                     <div class="panel-body">
                         <p><span class="categories-timestamp"><time datetime="2015-01-30T13:12:00-06:00">vie 30 enero 2015</time></span> <a href="/my-super-post.html">First post</a></p>
                     </div>
@@ -160,6 +160,21 @@ schiob            </a>
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
 <script src="/theme/js/respond.min.js"></script>
 
+    <!-- Disqus -->
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'schiob'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <!-- End Disqus Code -->
 
 </body>
 </html>
