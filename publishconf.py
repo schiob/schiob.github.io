@@ -10,8 +10,8 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = ''
-RELATIVE_URLS = False
+SITEURL = 'http://schiob.github.io/'
+DISQUS_SITENAME = 'schiobgithub'
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'

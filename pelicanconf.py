@@ -29,6 +29,9 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+# Uncomment following line if you want document-relative URLs when developing
+RELATIVE_URLS = True
+
 # URLs
 GITHUB_URL = 'https://github.com/schiob'
 
@@ -45,7 +48,7 @@ SOCIAL = (('Github', 'https://github.com/schiob'),
           )
 
 # External services
-DISQUS_SITENAME = 'schiob'
+DISQUS_SITENAME = 'schiobgithub'
 
 DEFAULT_PAGINATION = 10
 
