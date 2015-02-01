@@ -7,7 +7,9 @@ SITENAME = u'schiob'
 SITESUBTITLE = u'A space to write about my work and interests.'
 SITEURL = ''
 
+# Paths
 PATH = 'content'
+STATIC_PATHS = ['images']
 
 TIMEZONE = 'America/Monterrey'
 
@@ -27,6 +29,9 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+# URLs
+GITHUB_URL = 'https://github.com/schiob'
+
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
@@ -39,7 +44,12 @@ SOCIAL = (('Github', 'https://github.com/schiob'),
           ('Google+', 'https://plus.google.com/u/0/+SantiagoChío'),
           )
 
+# External services
+DISQUS_SITENAME = 'schiob'
+
 DEFAULT_PAGINATION = 10
+
+TAG_CLOUD_MAX_ITEMS = 5
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

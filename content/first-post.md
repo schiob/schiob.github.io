@@ -1,6 +1,6 @@
 Title: First post
 Date: 2015-01-30 13:12
-Category: News
+Category: Blog
 Tags: pelican, publishing
 Slug: my-super-post
 Authors: Santiago Chio
