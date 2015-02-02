@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>publishing - schiob</title>
+    <title>publishing - Santiago Chio</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -15,11 +15,11 @@
     <meta name="keywords" content="publishing" />
 
     <!-- Open Graph tags -->
-        <meta property="og:site_name" content="schiob" />
+        <meta property="og:site_name" content="Santiago Chio" />
         <meta property="og:type" content="website"/>
-        <meta property="og:title" content="schiob"/>
+        <meta property="og:title" content="Santiago Chio"/>
         <meta property="og:url" content=".."/>
-        <meta property="og:description" content="schiob"/>
+        <meta property="og:description" content="Santiago Chio"/>
 
 
     <!-- Bootstrap -->
@@ -43,11 +43,11 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="../" class="navbar-brand">
-schiob            </a>
+Santiago Chio            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                         <li><a href="../pages/about.html">
+                         <li><a href="../about-me.html">
                              About
                           </a></li>
                         <li >
@@ -68,9 +68,9 @@ schiob            </a>
         <div class="col-sm-9">
 
             <article>
-                <h2><a href="../my-super-post.html">First post</a></h2>
+                <h2><a href="../blog/my-super-post/">First post</a></h2>
                 <div class="summary"><p>Test article</p>
-                    <a class="btn btn-default btn-xs" href="../my-super-post.html">more ...</a>
+                    <a class="btn btn-default btn-xs" href="../blog/my-super-post/">more ...</a>
                 </div>
             </article>
             <hr/>
@@ -78,12 +78,7 @@ schiob            </a>
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
-<div id="aboutme">
-    <p>
-        <strong>About Santiago Chio</strong><br/>
-        I build things with Python!
-    </p>
-</div>
+
 <section class="well well-sm">
     <ul class="list-group list-group-flush">
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
@@ -97,7 +92,7 @@ schiob            </a>
 
 
 
-            <li class="list-group-item"><a href="../"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+            <li class="list-group-item"><a href="../tags.html"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-4">
                         <a href="../tag/publishing.html">
@@ -132,15 +127,57 @@ schiob            </a>
     </div>
 </div>
 <footer>
-   <div class="container">
-      <hr>
+   <div class="well well-lg" id="footer-well">
+      <div class="container">
+      <div class="row">
+           <div class="col-sm-4">
+               <div id="RecentComments" class="dsq-widget">
+                <h3 style="margin-bottom:0.5px;">Recent Comments</h3>
+                <script type="text/javascript" src="http://schiobgithub.disqus.com/recent_comments_widget.js?num_items=5&hide_mods=0&hide_avatars=0&avatar_size=32&excerpt_length=100"></script>
+               </div>
+
+           </div>
+           <div class="col-sm-4">
+               <h3 style="margin-bottom:0.5px;">Websites I Like</h3>
+               </br>
+               <ul style="list-style-type:circle">
+                <div style="margin-bottom: 10.5px; margin-top: 10.5px; font-size: 19px;">
+                  <li>
+                    <a href="http://getpelican.com/" target="_blank">
+                        Pelican
+                    </a>
+                  </li>
+                <div>
+                <div style="margin-bottom: 10.5px; margin-top: 10.5px; font-size: 19px;">
+                  <li>
+                    <a href="http://python.org/" target="_blank">
+                        Python.org
+                    </a>
+                  </li>
+                <div>
+              </ul>
+           </div>
+           <div class="col-sm-4">
+<div id="aboutme">
+    <h3 style="margin-bottom:0.5px;">About Santiago Chio</h3><br/>
+        <p>
+            <img width="60%" class="img-thumbnail" src="/images/profile.jpg"/>
+        </p>
+    <p>
+        I build things with Python!
+    </p>
+</div>
+           </div>
+      </div>
       <div class="row">
          <div class="col-xs-10">&copy; 2015 Santiago Chio
-            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            &middot; Powered by <a href="http://python.org/" target="_blank">Python</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+            a customized <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
          <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
       </div>
+   </div>
    </div>
 </footer>
 <script src="../theme/js/jquery.min.js"></script>
@@ -151,6 +188,7 @@ schiob            </a>
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
 <script src="../theme/js/respond.min.js"></script>
 
+    <script src="../theme/js/bodypadding.js"></script>
     <!-- Disqus -->
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
