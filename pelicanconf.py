@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Santiago Chio'
-SITENAME = u'schiob'
-SITESUBTITLE = u'A space to write about my work and interests.'
+SITENAME = u'Santiago Chio'
+BANNER_SUBTITLE = u"A space to write about my work and interests."
 SITEURL = ''
 
 # Paths
@@ -20,6 +20,12 @@ THEME = "/home/chio/pelican-themes/pelican-bootstrap3"
 BOOTSTRAP_THEME = 'flatly'
 
 # Header
+BANNER = "/images/banner.jpg"
+# SITELOGO = 'images/logo.jpg'
+# SITELOGO_SIZE = 32
+# FAVICON = 'images/favicon.png'
+
+AVATAR = "/images/profile.jpg"
 ABOUT_ME = "I build things with Python!"
 
 # Feed generation is usually not desired when developing
@@ -32,7 +38,14 @@ AUTHOR_FEED_RSS = None
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-# URLs
+ARTICLE_URL = '{category}/{slug}/'
+ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
+TAG_URL = 'tags/{slug}.html'
+TAG_SAVE_AS = 'tags/{slug}.html'
+TAGS_URL = 'tags.html'
+
 GITHUB_URL = 'https://github.com/schiob'
 
 # Blogroll
@@ -49,6 +62,7 @@ SOCIAL = (('Github', 'https://github.com/schiob'),
 
 # External services
 DISQUS_SITENAME = 'schiobgithub'
+DISQUS_SHORTNAME = 'schiobgithub'
 
 DEFAULT_PAGINATION = 10
 
