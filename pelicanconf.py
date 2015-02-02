@@ -15,18 +15,8 @@ TIMEZONE = 'America/Monterrey'
 
 DEFAULT_LANG = 'en'
 
-# Bootstrap theme
-THEME = "/home/chio/pelican-themes/pelican-bootstrap3"
-BOOTSTRAP_THEME = 'flatly'
 
-# Header
-BANNER = "/images/banner.jpg"
-# SITELOGO = 'images/logo.jpg'
-# SITELOGO_SIZE = 32
-# FAVICON = 'images/favicon.png'
 
-AVATAR = "/images/profile.jpg"
-ABOUT_ME = "I build things with Python!"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -60,9 +50,27 @@ SOCIAL = (('Github', 'https://github.com/schiob'),
           ('Google+', 'https://plus.google.com/u/0/+SantiagoChío'),
           )
 
-# External services
+##################### Exterior Services ############################
 DISQUS_SITENAME = 'schiobgithub'
 DISQUS_SHORTNAME = 'schiobgithub'
+DISQUS_ID_PREFIX_SLUG = True
+
+ADDTHIS_PROFILE = ' ra-54cedadb3f018eeb'
+ADDTHIS_DATA_TRACK_ADDRESSBAR = False
+
+####################### Theme-Specific Settings #########################
+THEME = "/home/chio/pelican-themes/pelican-bootstrap3"
+BOOTSTRAP_THEME = 'flatly'
+
+# SITELOGO = 'images/logo.jpg'
+# SITELOGO_SIZE = 32
+# FAVICON = 'images/favicon.png'
+
+AVATAR = "/images/profile.jpg"
+ABOUT_ME = "I build things with Python!"
+
+BANNER = "/images/banner.jpg"
+
 
 DEFAULT_PAGINATION = 10
 
