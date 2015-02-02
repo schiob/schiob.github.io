@@ -67,7 +67,7 @@ BOOTSTRAP_THEME = 'flatly'
 # FAVICON = 'images/favicon.png'
 
 AVATAR = "/images/profile.jpg"
-ABOUT_ME = "I build things with Python!"
+ABOUT_ME = "I'm a programmer and a musician but over all I'm a constant learner.<p>Python lover. Data, Machine Learning and Cognitive Computing</p>"
 
 BANNER = "/images/banner.jpg"
 
