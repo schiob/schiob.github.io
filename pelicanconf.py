@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Santiago Chio'
 SITENAME = u'Santiago Chio'
 BANNER_SUBTITLE = u"A space to write about my work and interests."
-SITEURL = ''
+SITEURL = 'http://schiob.github.io'
 
 # Paths
 PATH = 'content'
@@ -52,8 +52,8 @@ SOCIAL = (('Github', 'https://github.com/schiob'),
 
 ##################### Exterior Services ############################
 DISQUS_SITENAME = 'schiobgithub'
-DISQUS_SHORTNAME = 'schiobgithub'
-DISQUS_ID_PREFIX_SLUG = True
+#DISQUS_SHORTNAME = 'schiobgithub'
+#DISQUS_ID_PREFIX_SLUG = True
 
 ADDTHIS_PROFILE = ' ra-54cedadb3f018eeb'
 ADDTHIS_DATA_TRACK_ADDRESSBAR = False
