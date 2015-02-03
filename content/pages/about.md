@@ -12,10 +12,10 @@ As a programmer I use Python almost all the time but I have experience with Java
 for programming contest.
 
 #### ICPC
-Two years ago I joined to the ACM-Student Chapter of my university and since then I am involve in the
+Two years ago I joined to the ACM-Student Chapter of my university and since then I am involved in the
 [ICPC](http://icpc.baylor.edu/), the chapter's activities and the practice of problem solving with different Online Judges.
 
 ### About this blog
 I created this website to document my projects and share them. I'm constantly discovering new tools, books and technology,
 and this will be the place for me to experiment and create. Hopefully the information in this blog will be useful to
-someone and get inspired to start a new project and learn something new.
+someone and get inspired to start a new project and, who knows, maybe learn something new.

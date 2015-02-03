@@ -58,6 +58,8 @@ DISQUS_SITENAME = 'schiobgithub'
 ADDTHIS_PROFILE = ' ra-54cedadb3f018eeb'
 ADDTHIS_DATA_TRACK_ADDRESSBAR = False
 
+GOOGLE_ANALYTICS = "UA-59296306-1"
+
 ####################### Theme-Specific Settings #########################
 THEME = "/home/chio/pelican-themes/pelican-bootstrap3"
 BOOTSTRAP_THEME = 'flatly'
@@ -67,7 +69,7 @@ BOOTSTRAP_THEME = 'flatly'
 # FAVICON = 'images/favicon.png'
 
 AVATAR = "/images/profile.jpg"
-ABOUT_ME = "I'm a programmer and a musician but over all I'm a constant learner.<p>Python lover. Data, Machine Learning and Cognitive Computing</p>"
+ABOUT_ME = "I'm a programmer and a musician but over all I'm a constant learner.<p>Python lover. Data, Machine Learning and Cognitive Computing.</p>"
 
 BANNER = "/images/banner.jpg"
 

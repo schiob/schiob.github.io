@@ -20,4 +20,4 @@ DELETE_OUTPUT_DIRECTORY = True
 # Following items are often useful when publishing
 
 DISQUS_SITENAME = "schiobgithub'"
-#GOOGLE_ANALYTICS = ""
+#GOOGLE_ANALYTICS = "UA-59296306-1"
