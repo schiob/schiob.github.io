@@ -10,8 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://schiob.github.io/'
-#DISQUS_SITENAME = 'schiobgithub'
+SITEURL = 'http://schiob.github.io'
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
@@ -20,5 +19,5 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
+DISQUS_SITENAME = "schiobgithub'"
 #GOOGLE_ANALYTICS = ""
