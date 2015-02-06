@@ -1,10 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Santiago Chio</title><link href="http://schiob.github.io/" rel="alternate"></link><link href="http://schiob.github.io/feeds/all-en.atom.xml" rel="self"></link><id>http://schiob.github.io/</id><updated>2015-01-30T13:12:00-06:00</updated><entry><title>First post</title><link href="http://schiob.github.io/blog/my-super-post/" rel="alternate"></link><updated>2015-01-30T13:12:00-06:00</updated><author><name>Santiago Chio</name></author><id>tag:schiob.github.io,2015-01-30:blog/my-super-post/</id><summary type="html">&lt;h2&gt;Hello!!&lt;/h2&gt;
-&lt;p&gt;This is the first post, just to test this out!&lt;/p&gt;
-&lt;h4&gt;Let's check Pygments&lt;/h4&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hola&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;hola&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Santiago Chio</title><link href="http://schiob.github.io/" rel="alternate"></link><link href="http://schiob.github.io/feeds/all-en.atom.xml" rel="self"></link><id>http://schiob.github.io/</id><updated>2015-02-05T15:14:00-06:00</updated><entry><title>Making this website with Pelican</title><link href="http://schiob.github.io/programming/making-this-website-with-pelican/" rel="alternate"></link><updated>2015-02-05T15:14:00-06:00</updated><author><name>Santiago Chio</name></author><id>tag:schiob.github.io,2015-02-05:programming/making-this-website-with-pelican/</id><summary type="html">&lt;p&gt;For the first article in the blog I'd like to explain the whole process that I made to set this website in
+&lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; with &lt;a href="http://docs.getpelican.com/"&gt;Pelican&lt;/a&gt; a static site generator powered
+by &lt;a href="https://www.python.org/"&gt;Python&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This will be a kind of tutorial/guide thought the &lt;a href="https://github.com/schiob/schiob.github.io"&gt;repository of this site&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;Why Pelican and why GitHub Pages?&lt;/h4&gt;
+&lt;p&gt;Because this website doesn't need a backend to fulfill its purpose, and because I don't want to mess around with a
+server service (for now), I decided to host it in GitHub Pages, a free service that uses your GitHub repository directly to
+generate a website.
+Now, there are a large amount of ways to make a blog like this one, and there are others blogging
+framewroks out there to use with GitHub Pages like &lt;a href="http://octopress.org/"&gt;Octopress&lt;/a&gt;, &lt;a href="http://hexo.io/"&gt;Hexo&lt;/a&gt;, 
+&lt;a href="http://foundation.zurb.com/"&gt;Foundation&lt;/a&gt;, &lt;a href="http://jekyllrb.com/"&gt;Jekyll&lt;/a&gt; (although Jekyll is the engine behind GitHub Pages),
+and pretty much anything that can produce HTML and CSS, even your bare hands with a Text Editor.&lt;/p&gt;
+&lt;p&gt;All of this frameworks have something different, but they make the same work in the end.
+So I chose Pelican simply because it's written in Python, and I love Python.&lt;/p&gt;
+&lt;p&gt;I assume that you're using Linux or an Unix-like operating system and Python 3.&lt;/p&gt;
+&lt;p&gt;With that being said let's get started.&lt;/p&gt;
+&lt;h2&gt;Setting up our environment&lt;/h2&gt;
+&lt;p&gt;First of all, we need to have order in our project so let's create a virtual environment, I use
+&lt;a href="https://virtualenvwrapper.readthedocs.org"&gt;virtualenvwrapper&lt;/a&gt; it's a set of extensions that &lt;em&gt;wrappers&lt;/em&gt;
+&lt;a href="https://virtualenv.pypa.io"&gt;virtualenv&lt;/a&gt; and make it easier to use.&lt;/p&gt;
+&lt;p&gt;If  you don't have them already just:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;pip install virtualenv virtualenvwrapper
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-    &lt;span class="n"&gt;hola&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Chio&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry></feed>
+
+&lt;p&gt;Create the virtual environment and switch to it:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;mkvirtualenv --python&lt;span class="o"&gt;=&lt;/span&gt;python3 blog
+workon blog
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now install Pelican and Markdown if you're going to use it:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;pip install pelican Markdown
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;We are going to use &lt;em&gt;ghp-import&lt;/em&gt; later on so install it also:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;pip install ghp-import
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Creating our project&lt;/h2&gt;
+&lt;h3&gt;GitHub repository&lt;/h3&gt;
+&lt;p&gt;Because this is a personal webpage I'm going to use a user GitHub Page, therefore we have to &lt;a href="https://github.com/new"&gt;create a new repository&lt;/a&gt;
+with specific characteristics:
+- The name of the repository must be &lt;em&gt;username.github.io&lt;/em&gt; where &lt;em&gt;username&lt;/em&gt; is your username on GitHub.
+- As all the &lt;em&gt;User&lt;/em&gt; GitHub Pages everything in your master branch will be used to make your page.&lt;/p&gt;
+&lt;p&gt;Now go to the folder where you want to place your project and clone the repository:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;git clone https://github.com/username/username.github.io
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Pelican project&lt;/h3&gt;
+&lt;p&gt;Inside the project folder let's create a skeleton project:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;pelican-quickstart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;That command will ask you a set of questions for the configuration (you can change them later) of the page and it'll 
+create a folder structure like this one:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;blog
+├── content/
+├── output/
+├── develop_server.sh
+├── pelicanconf.py
+└── publishconf.py
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The &lt;em&gt;pelicanconf.py&lt;/em&gt; file is where I'll put all the configuration, you can use specific settings for publish your site located
+in &lt;em&gt;publishconf.py&lt;/em&gt; but I'm not going to use it.&lt;/p&gt;
+&lt;p&gt;Maybe the most important settings are the URL related ones, but you can do a lot of things in the &lt;em&gt;pelicanconf.py&lt;/em&gt; file, feel free to
+go to the &lt;a href="http://docs.getpelican.com/en/3.5.0/settings.html"&gt;docs&lt;/a&gt; and check out all the possibilities.&lt;/p&gt;
+&lt;h2&gt;Writing content&lt;/h2&gt;
+&lt;p&gt;The part of writing is pretty simple, all the content of the site is written in &lt;a href="https://help.github.com/articles/markdown-basics/"&gt;Markdown&lt;/a&gt;
+and the files are going to be in the &lt;em&gt;content&lt;/em&gt; folder. I separate the articles in category folders and the pages, the content
+that don't change very often (Bio, About), in its own folder.&lt;/p&gt;
+&lt;p&gt;You can see the metadata syntax for Markdown post in the &lt;a href="http://docs.getpelican.com/en/3.5.0/content.html"&gt;pelican docs&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Theme and personalization&lt;/h2&gt;
+&lt;p&gt;Now that we have some sort of content in the page we can visualize it, select a theme and tweaking a little bit.&lt;/p&gt;
+&lt;p&gt;I selected the &lt;a href="https://github.com/DandyDev/pelican-bootstrap3"&gt;Bootstrap 3 theme&lt;/a&gt;, just clone the repository:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;git clone https://github.com/DandyDev/pelican-bootstrap3.git
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And then point the &lt;code&gt;THEME&lt;/code&gt; variable in your &lt;em&gt;pelicanconf.py&lt;/em&gt; to &lt;code&gt;/path/to/pelican-bootstrap3&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Part of the beauty of Bootstrap 3 is that &lt;a href="http://dandydev.net/"&gt;Daan Debie&lt;/a&gt; included all the Bootstrap 3 themes from
+&lt;a href="http://bootswatch.com/"&gt;Bootswatch&lt;/a&gt; made by &lt;a href="https://github.com/thomaspark"&gt;Thomas Park&lt;/a&gt;.
+I which the Bootswatch theme to &lt;em&gt;flatly&lt;/em&gt; by setting the &lt;code&gt;BOOTSTRAP_THEME&lt;/code&gt; variable to the &lt;em&gt;theme-name&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;At this point the webpage looked really good, but checking out some examples I saw a terrific webpage called
+&lt;a href="http://beneathdata.com/"&gt;Beneath Data&lt;/a&gt; created by &lt;a href="http://www.tylerhartley.com/"&gt;Tyler Hartley&lt;/a&gt; with a beautiful design and
+great content, so I use some of his design (hope he doesn't mind) and use it on my webpage.&lt;/p&gt;
+&lt;p&gt;If you want to change something of the theme just go to the theme folder and change it at will.&lt;/p&gt;
+&lt;h2&gt;Adding third party services&lt;/h2&gt;
+&lt;p&gt;To add &lt;a href="https://disqus.com"&gt;Disqus comments&lt;/a&gt;, &lt;a href="www.google.com/analytics"&gt;Google analytics&lt;/a&gt;, and &lt;a href="http://www.addthis.com/"&gt;AddThis&lt;/a&gt;
+you have to create their respective accounts and then set the &lt;code&gt;DISQUS_SITENAME&lt;/code&gt;, &lt;code&gt;GOOGLE_ANALYTICS&lt;/code&gt; and &lt;code&gt;ADDTHIS_PROFILE&lt;/code&gt; to the 
+code that each service provide you.&lt;/p&gt;
+&lt;p&gt;After that and with some luck everything should work automagically.&lt;/p&gt;
+&lt;h2&gt;Hosting in GitHub Pages&lt;/h2&gt;
+&lt;p&gt;The last part. The repository structure and the page hosting.&lt;/p&gt;
+&lt;p&gt;All the content and the settings will be in a &lt;em&gt;source&lt;/em&gt; branch because the &lt;em&gt;master&lt;/em&gt; branch is used to create the actual page.&lt;/p&gt;
+&lt;p&gt;In order to keep only the &lt;em&gt;output/&lt;/em&gt; folder in the &lt;em&gt;master&lt;/em&gt; branch I used &lt;em&gt;ghp-import&lt;/em&gt;, this little tool make a commit in a branch with only the
+content of a specific folder:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;ghp-import -m &lt;span class="s2"&gt;&amp;quot;commit message&amp;quot;&lt;/span&gt; -b master output/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If no branch is specified the destination branch would be &lt;em&gt;gh-pages&lt;/em&gt; that it's the branch used in a Project site GitHub Page.&lt;/p&gt;
+&lt;p&gt;After that you can just:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;git push --all
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And the page should be up and running.&lt;/p&gt;</summary><category term="pelican"></category><category term="python"></category><category term="github"></category></entry></feed>

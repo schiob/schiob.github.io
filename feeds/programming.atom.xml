@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Santiago Chio</title><link>http://schiob.github.io/</link><description></description><atom:link href="http://schiob.github.io/feeds/santiago-chio.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 05 Feb 2015 15:14:00 -0600</lastBuildDate><item><title>Making this website with Pelican</title><link>http://schiob.github.io/programming/making-this-website-with-pelican/</link><description>&lt;p&gt;For the first article in the blog I'd like to explain the whole process that I made to set this website in
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Santiago Chio</title><link href="http://schiob.github.io/" rel="alternate"></link><link href="http://schiob.github.io/feeds/programming.atom.xml" rel="self"></link><id>http://schiob.github.io/</id><updated>2015-02-05T15:14:00-06:00</updated><entry><title>Making this website with Pelican</title><link href="http://schiob.github.io/programming/making-this-website-with-pelican/" rel="alternate"></link><updated>2015-02-05T15:14:00-06:00</updated><author><name>Santiago Chio</name></author><id>tag:schiob.github.io,2015-02-05:programming/making-this-website-with-pelican/</id><summary type="html">&lt;p&gt;For the first article in the blog I'd like to explain the whole process that I made to set this website in
 &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; with &lt;a href="http://docs.getpelican.com/"&gt;Pelican&lt;/a&gt; a static site generator powered
 by &lt;a href="https://www.python.org/"&gt;Python&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This will be a kind of tutorial/guide thought the &lt;a href="https://github.com/schiob/schiob.github.io"&gt;repository of this site&lt;/a&gt;.&lt;/p&gt;
@@ -112,4 +112,4 @@ content of a specific folder:&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;And the page should be up and running.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Santiago Chio</dc:creator><pubDate>Thu, 05 Feb 2015 15:14:00 -0600</pubDate><guid>tag:schiob.github.io,2015-02-05:programming/making-this-website-with-pelican/</guid><category>pelican</category><category>python</category><category>github</category></item></channel></rss>
+&lt;p&gt;And the page should be up and running.&lt;/p&gt;</summary><category term="pelican"></category><category term="python"></category><category term="github"></category></entry></feed>
