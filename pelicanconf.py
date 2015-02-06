@@ -36,6 +36,8 @@ TAG_URL = 'tags/{slug}.html'
 TAG_SAVE_AS = 'tags/{slug}.html'
 TAGS_URL = 'tags.html'
 
+DELETE_OUTPUT_DIRECTORY  = True
+
 GITHUB_URL = 'https://github.com/schiob'
 
 # Blogroll

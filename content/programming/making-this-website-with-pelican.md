@@ -10,6 +10,8 @@ For the first article in the blog I'd like to explain the whole process that I m
 [GitHub Pages](https://pages.github.com/) with [Pelican](http://docs.getpelican.com/) a static site generator powered
 by [Python](https://www.python.org/).
 
+This will be a kind of tutorial.
+
 #### Why Pelican and why GitHub Pages?
 Because this website doesn't need a backend to fulfill its purpose, and because I don't want to mess around with a
 server service (for now), I decided to host it in GitHub Pages, a free service that uses your GitHub repository directly to
@@ -20,7 +22,7 @@ framewroks out there to use with GitHub Pages like [Octopress](http://octopress.
 and pretty much anything that can produce HTML and CSS, even your bare hands with a Text Editor.
 
 All of this frameworks have something different, but they make the same work in the end.
-So I chose Pelican simply because it's written in Python, and I love Python. :smile:
+So I chose Pelican simply because it's written in Python, and I love Python.
 
 I assume that you're using Linux or an Unix-like operating system and Python 3.
 
@@ -44,5 +46,23 @@ Now install Pelican and Markdown if you're going to use it:
 ```sh
 pip install pelican Markdown
 ```
+We are going to use _ghp-import_ later on so install it also:
+```sh
+pip install ghp-import
+```
 
 ## Creating our project
+
+### GitHub repository
+Because this is a personal webpage I'm going to use a user GitHub Page, therefore we have to [create a new repository](https://github.com/new)
+with specific characteristics:
+- The name of the repository must be _username.github.io_ where _username_ is your username on GitHub.
+- As all the _User_ GitHub Pages everything in your master branch will be used to make your page.
+
+Now go to the folder where you want to place your project and clone the repository:
+```sh
+git clone https://github.com/username/username.github.io
+```
+
+### Pelican project
+Inside the project folder let's create the  
