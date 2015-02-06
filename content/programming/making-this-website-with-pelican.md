@@ -34,16 +34,22 @@ First of all, we need to have order in our project so let's create a virtual env
 [virtualenv](https://virtualenv.pypa.io) and make it easier to use.
 
 If  you don't have them already just:
-`pip install virtualenv virtualenvwrapper`
+```sh
+pip install virtualenv virtualenvwrapper
+```
 Create the virtual environment and switch to it:
 ```sh
 mkvirtualenv --python=python3 blog
 workon blog
 ```
 Now install Pelican and Markdown if you're going to use it:
-`pip install pelican Markdown`
+```sh
+pip install pelican Markdown
+```
 We are going to use _ghp-import_ later on so install it also:
-`pip install ghp-import`
+```sh
+pip install ghp-import
+```
 
 ## Creating our project
 
@@ -54,20 +60,25 @@ with specific characteristics:
 - As all the _User_ GitHub Pages everything in your master branch will be used to make your page.
 
 Now go to the folder where you want to place your project and clone the repository:
-`git clone https://github.com/username/username.github.io`
+```sh
+git clone https://github.com/username/username.github.io
+```
 
 ### Pelican project
 Inside the project folder let's create a skeleton project:
-`pelican-quickstart`
+```sh
+pelican-quickstart
+```
 That command will ask you a set of questions for the configuration (you can change them later) of the page and it'll 
 create a folder structure like this one:
-.
-+-- content/
-+-- output/
-+-- develop_server.sh
-+-- Makefile
-+-- pelicanconf.py
-+-- publishconf.py
+```
+blog
+├── content/
+├── output/
+├── develop_server.sh
+├── pelicanconf.py
+└── publishconf.py
+```
 
 The _pelicanconf.py_ file is where I'll put all the configuration, you can use specific settings for publish your site located
 in _publishconf.py_ but I'm not going to use it.
@@ -88,7 +99,9 @@ You can see the metadata syntax for Markdown post in the [pelican docs](http://d
 Now that we have some sort of content in the page we can visualize it, select a theme and tweaking a little bit.
 
 I selected the [Bootstrap 3 theme](https://github.com/DandyDev/pelican-bootstrap3), just clone the repository:
-`git clone https://github.com/DandyDev/pelican-bootstrap3.git`
+```sh
+git clone https://github.com/DandyDev/pelican-bootstrap3.git
+```
 And then point the `THEME` variable in your _pelicanconf.py_ to `/path/to/pelican-bootstrap3`
 
 Part of the beauty of Bootstrap 3 is that [Daan Debie](http://dandydev.net/) included all the Bootstrap 3 themes from
@@ -117,9 +130,13 @@ All the content and the settings will be in a _source_ branch because the _maste
 
 In order to keep only the _output/_ folder in the _master_ branch I used _ghp-import_, this little tool make a commit in a branch with only the
 content of a specific folder:
-`ghp-import -m "commit message" -b master output/ `
+```sh
+ghp-import -m "commit message" -b master output/
+```
 If no branch is specified the destination branch would be _gh-pages_ that it's the branch used in a Project site GitHub Page.
 
 After that you can just:
-`git push --all`
+```sh
+git push --all
+```
 And the page should be up and running.
