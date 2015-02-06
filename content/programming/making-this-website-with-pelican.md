@@ -1,5 +1,6 @@
 Title: Making this website with Pelican
 Date: 2015-02-05 15:14
+Modified: 2015-02-06 14:37
 Category: Programming
 Tags: pelican, python, github
 Slug: making-this-website-with-pelican
@@ -122,7 +123,7 @@ code that each service provide you.
 
 After that and with some luck everything should work automagically.
 
-## Hosting in GitHub Pages
+## Hosting on GitHub Pages
 
 The last part. The repository structure and the page hosting.
 
