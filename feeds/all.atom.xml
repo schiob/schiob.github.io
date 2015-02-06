@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Santiago Chio</title><link href="http://schiob.github.io/" rel="alternate"></link><link href="http://schiob.github.io/feeds/all.atom.xml" rel="self"></link><id>http://schiob.github.io/</id><updated>2015-02-05T15:14:00-06:00</updated><entry><title>Making this website with Pelican</title><link href="http://schiob.github.io/programming/making-this-website-with-pelican/" rel="alternate"></link><updated>2015-02-05T15:14:00-06:00</updated><author><name>Santiago Chio</name></author><id>tag:schiob.github.io,2015-02-05:programming/making-this-website-with-pelican/</id><summary type="html">&lt;p&gt;For the first article in the blog I'd like to explain the whole process that I made to set this website in
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Santiago Chio</title><link href="http://schiob.github.io/" rel="alternate"></link><link href="http://schiob.github.io/feeds/all.atom.xml" rel="self"></link><id>http://schiob.github.io/</id><updated>2015-02-06T14:37:00-06:00</updated><entry><title>Making this website with Pelican</title><link href="http://schiob.github.io/programming/making-this-website-with-pelican/" rel="alternate"></link><updated>2015-02-06T14:37:00-06:00</updated><author><name>Santiago Chio</name></author><id>tag:schiob.github.io,2015-02-05:programming/making-this-website-with-pelican/</id><summary type="html">&lt;p&gt;For the first article in the blog I'd like to explain the whole process that I made to set this website in
 &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; with &lt;a href="http://docs.getpelican.com/"&gt;Pelican&lt;/a&gt; a static site generator powered
 by &lt;a href="https://www.python.org/"&gt;Python&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This will be a kind of tutorial/guide thought the &lt;a href="https://github.com/schiob/schiob.github.io"&gt;repository of this site&lt;/a&gt;.&lt;/p&gt;
@@ -97,7 +97,7 @@ great content, so I use some of his design (hope he doesn't mind) and use it on 
 you have to create their respective accounts and then set the &lt;code&gt;DISQUS_SITENAME&lt;/code&gt;, &lt;code&gt;GOOGLE_ANALYTICS&lt;/code&gt; and &lt;code&gt;ADDTHIS_PROFILE&lt;/code&gt; to the 
 code that each service provide you.&lt;/p&gt;
 &lt;p&gt;After that and with some luck everything should work automagically.&lt;/p&gt;
-&lt;h2&gt;Hosting in GitHub Pages&lt;/h2&gt;
+&lt;h2&gt;Hosting on GitHub Pages&lt;/h2&gt;
 &lt;p&gt;The last part. The repository structure and the page hosting.&lt;/p&gt;
 &lt;p&gt;All the content and the settings will be in a &lt;em&gt;source&lt;/em&gt; branch because the &lt;em&gt;master&lt;/em&gt; branch is used to create the actual page.&lt;/p&gt;
 &lt;p&gt;In order to keep only the &lt;em&gt;output/&lt;/em&gt; folder in the &lt;em&gt;master&lt;/em&gt; branch I used &lt;em&gt;ghp-import&lt;/em&gt;, this little tool make a commit in a branch with only the
