@@ -117,7 +117,7 @@ If you want to change something of the theme just go to the theme folder and cha
 ## Adding third party services
 
 To add [Disqus comments](https://disqus.com), [Google analytics](www.google.com/analytics), and [AddThis](http://www.addthis.com/)
-you have to create their respective accounts and then set the `DISQUS_SITENAME` `GOOGLE_ANALYTICS` and `ADDTHIS_PROFILE` to the 
+you have to create their respective accounts and then set the `DISQUS_SITENAME`, `GOOGLE_ANALYTICS` and `ADDTHIS_PROFILE` to the 
 code that each service provide you.
 
 After that and with some luck everything should work automagically.
