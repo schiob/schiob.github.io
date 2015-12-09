@@ -25,7 +25,7 @@
         <link rel="stylesheet" href="http://schiob.github.io/theme/css/bootstrap.flatly.min.css" type="text/css"/>
     <link href="http://schiob.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="http://schiob.github.io/theme/css/pygments/native.css" rel="stylesheet">
+    <link href="http://schiob.github.io/theme/css/pygments/default.css" rel="stylesheet">
     <link rel="stylesheet" href="http://schiob.github.io/theme/css/style.css" type="text/css"/>
 
         <link href="http://schiob.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
@@ -72,8 +72,12 @@ Santiago Chio            </a>
         <h1>Archives for Santiago Chio</h1>
         <div id="archives">
                 <p>
+                    <span class="categories-timestamp"><time datetime="2015-12-08T15:14:00-06:00">mar 08 diciembre 2015</time></span>
+                    <a href="http://schiob.github.io/programming/2015/12/08/chord-progression-with-genetic-algorithm/">Creating a chord progression with a genetic algorithm</a>
+                </p>
+                <p>
                     <span class="categories-timestamp"><time datetime="2015-02-05T15:14:00-06:00">jue 05 febrero 2015</time></span>
-                    <a href="http://schiob.github.io/programming/making-this-website-with-pelican/">Making this website with Pelican</a>
+                    <a href="http://schiob.github.io/programming/2015/02/05/making-this-website-with-pelican/">Making this website with Pelican</a>
                 </p>
         </div>
     </section>
@@ -96,21 +100,6 @@ Santiago Chio            </a>
 
             <li class="list-group-item"><a href="http://schiob.github.io/tags.html"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
-                    <li class="list-group-item tag-4">
-                        <a href="http://schiob.github.io/tags/python.html">
-                            python
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="http://schiob.github.io/tags/github.html">
-                            github
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="http://schiob.github.io/tags/pelican.html">
-                            pelican
-                        </a>
-                    </li>
                 </ul>
             </li>
         <!--     <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
@@ -242,5 +231,110 @@ Santiago Chio            </a>
     </script>
     <!-- End Google Analytics Code -->
 
+<style type="text/css">.text_cell .prompt {
+    display: none;
+}
+
+div.cell {
+    padding: 0;
+}
+
+div.text_cell_render {
+    padding: 0;
+}
+
+div.prompt {
+    font-size: 13px;
+}
+
+div.input_prompt {
+    padding: .7em 0.2em;
+}
+
+div.output_prompt {
+    padding: .4em .2em;
+}
+
+div.input_area {
+    margin: .2em 0.4em;
+}
+
+table.dataframe {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+table.dataframe th, td {
+    padding: 4px;
+    text-align: left;
+}</style>
+<style type="text/css">/*
+* GitHub style for Pygments syntax highlighter, for use with Jekyll
+* Courtesy of GitHub.com
+*/
+
+.highlight .hl-ipython3 pre .c { color: #999988; font-style: italic; }
+.highlight .hl-ipython3 pre .err { color: #a61717; background-color: #e3d2d2; }
+.highlight .hl-ipython3 pre .k { font-weight: bold; }
+.highlight .hl-ipython3 pre .o { font-weight: bold; }
+.highlight .hl-ipython3 pre .cm { color: #999988; font-style: italic; }
+.highlight .hl-ipython3 pre .cp { color: #999999; font-weight: bold; }
+.highlight .hl-ipython3 pre .c1 { color: #999988; font-style: italic; }
+.highlight .hl-ipython3 pre .cs { color: #999999; font-weight: bold; font-style: italic; }
+.highlight .hl-ipython3 pre .gd { color: #000000; background-color: #ffdddd; }
+.highlight .hl-ipython3 pre .gd .x { color: #000000; background-color: #ffaaaa; }
+.highlight .hl-ipython3 pre .ge { font-style: italic; }
+.highlight .hl-ipython3 pre .gr { color: #aa0000; }
+.highlight .hl-ipython3 pre .gh { color: #999999; }
+.highlight .hl-ipython3 pre .gi { color: #000000; background-color: #ddffdd; }
+.highlight .hl-ipython3 pre .gi .x { color: #000000; background-color: #aaffaa; }
+.highlight .hl-ipython3 pre .go { color: #888888; }
+.highlight .hl-ipython3 pre .gp { color: #555555; }
+.highlight .hl-ipython3 pre .gs { font-weight: bold; }
+.highlight .hl-ipython3 pre .gu { color: #800080; font-weight: bold; }
+.highlight .hl-ipython3 pre .gt { color: #aa0000; }
+.highlight .hl-ipython3 pre .kc { font-weight: bold; }
+.highlight .hl-ipython3 pre .kd { font-weight: bold; }
+.highlight .hl-ipython3 pre .kn { font-weight: bold; }
+.highlight .hl-ipython3 pre .kp { font-weight: bold; }
+.highlight .hl-ipython3 pre .kr { font-weight: bold; }
+.highlight .hl-ipython3 pre .kt { color: #445588; font-weight: bold; }
+.highlight .hl-ipython3 pre .m { color: #009999; }
+.highlight .hl-ipython3 pre .s { color: #dd1144; }
+.highlight .hl-ipython3 pre .n { color: #333333; }
+.highlight .hl-ipython3 pre .na { color: teal; }
+.highlight .hl-ipython3 pre .nb { color: #0086b3; }
+.highlight .hl-ipython3 pre .nc { color: #445588; font-weight: bold; }
+.highlight .hl-ipython3 pre .no { color: teal; }
+.highlight .hl-ipython3 pre .ni { color: purple; }
+.highlight .hl-ipython3 pre .ne { color: #990000; font-weight: bold; }
+.highlight .hl-ipython3 pre .nf { color: #990000; font-weight: bold; }
+.highlight .hl-ipython3 pre .nn { color: #555555; }
+.highlight .hl-ipython3 pre .nt { color: navy; }
+.highlight .hl-ipython3 pre .nv { color: teal; }
+.highlight .hl-ipython3 pre .ow { font-weight: bold; }
+.highlight .hl-ipython3 pre .w { color: #bbbbbb; }
+.highlight .hl-ipython3 pre .mf { color: #009999; }
+.highlight .hl-ipython3 pre .mh { color: #009999; }
+.highlight .hl-ipython3 pre .mi { color: #009999; }
+.highlight .hl-ipython3 pre .mo { color: #009999; }
+.highlight .hl-ipython3 pre .sb { color: #dd1144; }
+.highlight .hl-ipython3 pre .sc { color: #dd1144; }
+.highlight .hl-ipython3 pre .sd { color: #dd1144; }
+.highlight .hl-ipython3 pre .s2 { color: #dd1144; }
+.highlight .hl-ipython3 pre .se { color: #dd1144; }
+.highlight .hl-ipython3 pre .sh { color: #dd1144; }
+.highlight .hl-ipython3 pre .si { color: #dd1144; }
+.highlight .hl-ipython3 pre .sx { color: #dd1144; }
+.highlight .hl-ipython3 pre .sr { color: #009926; }
+.highlight .hl-ipython3 pre .s1 { color: #dd1144; }
+.highlight .hl-ipython3 pre .ss { color: #990073; }
+.highlight .hl-ipython3 pre .bp { color: #999999; }
+.highlight .hl-ipython3 pre .vc { color: teal; }
+.highlight .hl-ipython3 pre .vg { color: teal; }
+.highlight .hl-ipython3 pre .vi { color: teal; }
+.highlight .hl-ipython3 pre .il { color: #009999; }
+.highlight .hl-ipython3 pre .gc { color: #999; background-color: #EAF2F5; }</style>
 </body>
 </html>
