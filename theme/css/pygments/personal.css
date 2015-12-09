@@ -2,7 +2,8 @@
 * GitHub style for Pygments syntax highlighter, for use with Jekyll
 * Courtesy of GitHub.com
 */
-
+.highlight pre { background-color: #333333; }
+.highlight .hl-ipython3 pre { background-color: transparent; }
 .highlight .c { color: #999988; font-style: italic; }
 .highlight .err { color: #a61717; background-color: #e3d2d2; }
 .highlight .k { font-weight: bold; }
