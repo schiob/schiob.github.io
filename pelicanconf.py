@@ -82,3 +82,5 @@ BANNER = "/images/banner.jpg"
 DEFAULT_PAGINATION = 10
 
 TAG_CLOUD_MAX_ITEMS = 5
+
+PYGMENTS_STYLE = 'default'
