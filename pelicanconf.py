@@ -15,7 +15,10 @@ TIMEZONE = 'America/Monterrey'
 
 DEFAULT_LANG = 'en'
 
+MARKUP = ('md', 'ipynb')
 
+PLUGIN_PATH = './plugins'
+PLUGINS = ['ipynb']
 
 
 # Feed generation is usually not desired when developing
